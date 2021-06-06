@@ -22,16 +22,4 @@ var store = [{
         "tags": ["NBMiner"],
         "url": "https://nbminer.info/documentation/arguments/",
         "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
-      },{
-        "title": "Clear 06 04",
-        "excerpt":"   ","categories": ["articles"],
-        "tags": [],
-        "url": "https://nbminer.info/ru/articles/clear-06-04/",
-        "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
-      },{
-        "title": "Clear 06 05",
-        "excerpt":"   ","categories": ["articles"],
-        "tags": [],
-        "url": "https://nbminer.info/ru/articles/clear-06-05/",
-        "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
       },]
