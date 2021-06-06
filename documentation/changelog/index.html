@@ -1323,8 +1323,12 @@ Get started with NBMiner
    </div>
      <div class="search-content">
        <div class="search-content__inner-wrap">
-<input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term...">
-   <div id="results" class="results"></div>
+<form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id">
+    <input type="search" id="cse-search-input-box-id" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term...">
+    </form>
+   <div id="results" class="results">
+        <searchresults-only></searchresults-only>    
+   </div>
 </div>
      </div>
    <div class="page__footer">
@@ -1400,9 +1404,27 @@ Get started with NBMiner
      </footer>
    </div>
   <script src="/assets/js/main.min.js"></script>
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
+<script>
+  (function () {
+    var cx = 'b7d7ed68a7a58c9f9';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+  function googleCustomSearchExecute() {
+    var input = document.getElementById('cse-search-input-box-id');
+    var element = google.search.cse.element.getElement('searchresults-only0');
+    if (input.value == '') {
+      element.clearAllResults();
+    } else {
+      element.execute(input.value);
+    }
+    return false;
+  }
+</script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
