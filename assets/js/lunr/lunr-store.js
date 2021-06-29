@@ -1,5 +1,5 @@
 var store = [{
-        "title": "Download NBMiner  37.5 - AMD GPU Miner [2021]",
+        "title": "Download NBMiner  37.5 - AMD+NVIDIA GPU Miner [2021]",
         "excerpt":" Get started with NBMiner  \t\t \t\t\t \t\tVersion: 37.5  \t\tFile: *NBMiner.exe,    \t\tSHA256: e8e775add50c67e1c6f6ca20db318f745e22b085afcbdf5634015e6ef91e8853  \t\t(Download for Linux)\t \t\t \t\t \t\t \t\t \t\tDownload Now (Windows x64) \t\t \t\t(mirror) \t\t \t     The new NBMiner stable version is ready.   You can download NBMiner 37.5 from here:   Download Now   Download (mirror)   Inside the archive you will find a file README.txt with installation instructions.   Make sure to replace the pool and wallet address by what you’re using in all files.        ","categories": ["download"],
         "tags": ["NBMiner"],
         "url": "https://nbminer.info/download/37.5/",
@@ -23,9 +23,15 @@ var store = [{
         "url": "https://nbminer.info/documentation/setup/",
         "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
       },{
-        "title": "Download NBMiner  37.6 - AMD GPU Miner [2021]",
+        "title": "Download NBMiner  37.6 - AMD+NVIDIA GPU Miner [2021]",
         "excerpt":" Get started with NBMiner  \t\t \t\t\t \t\tVersion: 37.6  \t\tFile: *NBMiner.exe,    \t\tSHA256: 5fcac4e9a1aa6c88a1ae7fe871cccae17824abd9831a7cc03e8125d25c80f3e6  \t\t(Download for Linux)\t \t\t \t\t \t\t \t\t \t\tDownload Now (Windows x64) \t\t \t\t(mirror) \t\t \t     The new NBMiner stable version is ready.   You can download NBMiner 37.6 from here:   Download Now   Download (mirror)   Inside the archive you will find a file README.txt with installation instructions.   Make sure to replace the pool and wallet address by what you’re using in all files.   Changelog   fix: ethash --enable-dag-cache cause crash on AMD GPUs when switch DAG file.   fix: ergo support on AMD Vega GPUs.        ","categories": ["download"],
         "tags": ["NBMiner"],
         "url": "https://nbminer.info/download/37.6/",
+        "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Download NBMiner  38.1 - AMD+Nvidia GPU Miner [2021]",
+        "excerpt":" Get started with NBMiner  \t\t \t\t\t \t\tVersion: 38.1  \t\tFile: *NBMiner.exe,    \t\tSHA256: 1fc96e8b970d216f7e1798a5022bdf24d0b1249825303c9a17a9119644ed1481  \t\t(Download for Linux)\t \t\t \t\t \t\t \t\t \t\tDownload Now (Windows x64) \t\t \t\t(mirror) \t\t \t     The new NBMiner stable version is ready.   You can download NBMiner 38.1 from here:   Download Now   Download (mirror)   Inside the archive you will find a file README.txt with installation instructions.   Make sure to replace the pool and wallet address by what you’re using in all files.   Changelog      feature: ergo add mining.extranonce.subscribe support   fix: --enable-dag-cache causes crash on certain situation        ","categories": ["download"],
+        "tags": ["NBMiner"],
+        "url": "https://nbminer.info/download/38.1/",
         "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
       },]

@@ -2,6 +2,24 @@
 <urlset xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nbminer.info/ru/download/38.1/</loc>
+    
+    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nbminer.info/ru/articles/jpmorgan-06-29/</loc>
+    
+    <lastmod>2021-06-29T00:00:00+00:00</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
     <loc>https://nbminer.info/ru/articles/nabiul-06-22/</loc>
     
     <lastmod>2021-06-22T00:00:00+00:00</lastmod>
@@ -71,7 +89,7 @@
   <url>
     <loc>https://nbminer.info/ru/about/</loc>
       
-        <lastmod>2021-06-22T07:07:26+00:00</lastmod>
+        <lastmod>2021-06-29T19:37:31+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -83,7 +101,7 @@
   <url>
     <loc>https://nbminer.info/ru/cookie/</loc>
       
-        <lastmod>2021-06-22T07:07:26+00:00</lastmod>
+        <lastmod>2021-06-29T19:37:31+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -95,7 +113,7 @@
   <url>
     <loc>https://nbminer.info/ru/</loc>
       
-        <lastmod>2021-06-22T07:07:26+00:00</lastmod>
+        <lastmod>2021-06-29T19:37:31+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -119,7 +137,7 @@
   <url>
     <loc>https://nbminer.info/ru/privacy/</loc>
       
-        <lastmod>2021-06-22T07:07:26+00:00</lastmod>
+        <lastmod>2021-06-29T19:37:31+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -133,7 +151,7 @@
   <url>
     <loc>https://nbminer.info/ru/articles/</loc>
       
-        <lastmod>2021-06-22T07:07:26+00:00</lastmod>
+        <lastmod>2021-06-29T19:37:31+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -145,7 +163,7 @@
   <url>
     <loc>https://nbminer.info/ru/blog/</loc>
       
-        <lastmod>2021-06-22T07:07:26+00:00</lastmod>
+        <lastmod>2021-06-29T19:37:31+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -157,7 +175,7 @@
   <url>
     <loc>https://nbminer.info/ru/documentation/</loc>
       
-        <lastmod>2021-06-22T07:07:26+00:00</lastmod>
+        <lastmod>2021-06-29T19:37:31+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -169,7 +187,7 @@
   <url>
     <loc>https://nbminer.info/ru/download/</loc>
       
-        <lastmod>2021-06-22T07:07:26+00:00</lastmod>
+        <lastmod>2021-06-29T19:37:31+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -181,7 +199,7 @@
   <url>
     <loc>https://nbminer.info/ru/video/</loc>
       
-        <lastmod>2021-06-22T07:07:26+00:00</lastmod>
+        <lastmod>2021-06-29T19:37:31+00:00</lastmod>
        
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
