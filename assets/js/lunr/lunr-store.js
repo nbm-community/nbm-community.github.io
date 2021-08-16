@@ -34,4 +34,10 @@ var store = [{
         "tags": ["NBMiner"],
         "url": "https://nbminer.info/download/38.1/",
         "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Download NBMiner 39.0 - AMD+Nvidia GPU Miner [2021]",
+        "excerpt":" Get started with NBMiner  \t\t \t\t\t \t\tVersion: 39.0  \t\tFile: *NBMiner.exe,    \t\tSHA256: ad00ba723c7bdf7eb0d487f3a488b93aa0a6d87d868b61e588d718a184a0630e  \t\t(Download for Linux)\t \t\t \t\t \t\t \t\t \t\tDownload Now (Windows x64) \t\t \t\t(mirror) \t\t \t     The new NBMiner stable version is ready.   You can download NBMiner 39.0 from here:   Download Now   Download (mirror)   Inside the archive you will find a file README.txt with installation instructions.   Make sure to replace the pool and wallet address by what you’re using in all files.   Changelog   Ethash New LHR mode for ETH mining on RTX 30 series LHR GPUs, able to get ~70% of maximum unlocked hashrate.     This mode can be tuned by argument -lhr, only works for ethash right now.   -lhr default to 0, meaning even if -lhr is not set, LHR mode with -lhr 68 will be applied to LHR GPUs if certain GPUs are detected.   Tune LHR mode by setting -lhr &lt;value&gt;, a specific value will tell miner try to reach value percent of maximum unlocker hashrate, e.g. -lhr 68 will expect to get 68% of hashrate for same model non-lhr GPU. Higher -lhr value will results in higher hashrate, but has higher possibility to run into lock state, which will leads to much less hashrate. A good start tuning value is 68, which has been tested to be stable on most rig configurations.   -lhr value can be set for each GPU by using comma separeted list, -lhr 65,68,0,-1, where -1 means turn off LHR mode.        ","categories": ["download"],
+        "tags": ["NBMiner"],
+        "url": "https://nbminer.info/download/39.0/",
+        "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
       },]
