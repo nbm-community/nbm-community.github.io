@@ -21,7 +21,7 @@
    <meta name="twitter:card" content="summary">
      <meta name="twitter:image" content="https://nbminer.info/assets/images/site-logo.png">
  <meta property="article:published_time" content="2021-05-29T00:00:00+00:00">
- <meta property="article:modified_time" content="2021-05-10T00:00:00+00:00">
+ <meta property="article:modified_time" content="2021-08-24T00:00:00+00:00">
 <link rel="canonical" href="https://nbminer.info/ru/documentation/setup/">
 <script type="application/ld+json">
   {
@@ -146,7 +146,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
    <meta itemprop="headline" content="NBMiner: Комиссия, Системные Требования и Лимиты [2021]">
    <meta itemprop="description" content="NBMiner требует Windows x64 (Windows 7, Windows 10 и т.д.) Или Linux x64 (проверено на Ubuntu LTS и стабильной версии Debian)">
    <meta itemprop="datePublished" content="May 29, 2021">
-   <meta itemprop="dateModified" content="May 10, 2021"> 
+   <meta itemprop="dateModified" content="August 24, 2021"> 
    <div class="page__inner-wrap">
       <header>
 		 <h1 id="page-title" class="page__title" itemprop="headline">NBMiner: Комиссия, системные требования и лимиты
@@ -193,16 +193,18 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
          </aside>
        <p><em>NBMiner требует Windows x64 (Windows 7, Windows 10 и т.д.) Или Linux x64 (проверено на Ubuntu LTS и стабильной версии Debian)</em>
 <img srcset="/assets/images/documentation/mobile/nbminer.webp 323w,              /assets/images/documentation/webp/nbminer.webp 517w,              /assets/images/documentation/large/nbminer.webp 1920w" sizes="(max-width: 720px) 50px, 			(max-width: 721px) 1920px, 			(max-width: 1920px) 400px,             517px" src="/assets/images/documentation/jpeg/nbminer.png" alt="NBMiner" loading="lazy" decoding="async"></p>
-<p>Для начала вы можете скачать самую последнюю версию NBMiner 39.0 отсюда:</p>
-<p><a href="https://github.com/NebuTech/NBMiner/releases/download/v39.0/NBMiner_39.0_Win.zip" class="btn btn--success btn--x-large" rel="nofollow noopener" target="_blank">Скачать сейчас</a></p>
+<p>Для начала вы можете скачать самую последнюю версию NBMiner 39.1 отсюда:</p>
+<p><a href="https://github.com/NebuTech/NBMiner/releases/download/v39.1/NBMiner_39.1_Win.zip" class="btn btn--success btn--x-large" rel="nofollow noopener" target="_blank">Скачать сейчас</a></p>
 <p><a href="https://github.com/NebuTech/NBMiner/releases" class="btn btn--danger btn--x-large" rel="nofollow noopener" target="_blank">Скачать (зеркало)</a></p>
 <p>NBMiner имеет интерфейс командной строки. Для минимальной конфигурации введите в .bat файле:</p>
 <p class="notice--ya">nbminer -a [алгоритм майнинга] -o [сервер пула] -u [имя пользователя или адрес кошелька]</p>
 <p>Пример:</p>
-<p><code class="language-plaintext highlighter-rouge">nbminer -a ethash -o ethproxy+tcp://asia1.ethermine.org:4444 -u 0x12343bdgf.worker</code></p>
+<div class="language-batch highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">nbminer</span> <span class="na">-a </span><span class="kd">ethash</span> <span class="na">-o </span><span class="kd">ethproxy</span><span class="na">+tcp</span>://asia1.ethermine.org:4444 <span class="na">-u </span><span class="mh">0x12343bd</span><span class="kd">gf</span>.worker
+</code></pre></div></div>
 <p>Для получения полного списка параметров конфигурации выполните:</p>
-<p>nbminer –help</p>
-<p>Готовые шаблоны</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nbminer --help
+</code></pre></div></div>
+<p>Готовые шаблоны представлены ниже.</p>
 <h3 id="ethereum-eth">Ethereum (ETH)</h3>
 <p>ethermine:<br>
 <code class="language-plaintext highlighter-rouge">nbminer -a ethash -o ethproxy+tcp://asia1.ethermine.org:4444 -u 0x12343bdgf.worker</code></p>
@@ -218,6 +220,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <code class="language-plaintext highlighter-rouge">nbminer -a ethash -o ethproxy+tcp://ethereum.herominers.com:10201 -u 0x12343bdgf.worker</code></p>
 <p>nicehash:<br>
 <code class="language-plaintext highlighter-rouge">nbminer -a ethash -o nicehash+tcp://daggerhashimoto.eu.nicehash.com:3353 -u btc_address.worker</code></p>
+<p class="notice--danger"><strong>Хотите настроить NBMiner для максимальной прибыли? Читайте <a href="https://miningsoft.org/ru/miners/nbminer/" rel="nofollow noopener" target="_blank">полный гайд по настройке NBMiner</a></strong></p>
 <h3 id="ethzil">ETH+ZIL</h3>
 <p>ezil:<br>
 <code class="language-plaintext highlighter-rouge">nbminer -a ethash -o stratum+tcp://cn.ezil.me:5555 -u ETH_WALLET.ZIL_WALLET.WORKER --enable-dag-cache</code></p>
@@ -295,9 +298,9 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
    <div class="row">
      <div class="down-inner">
        <h2 class="h2 mb-4 pb-2">Download now</h2>
-       <p class="text-center mx-auto mb-4 pb-2">Latest version is 39.0<br>
+       <p class="text-center mx-auto mb-4 pb-2">Latest version is 39.1<br>
 File: *nbminer.exe, <br>
-<span class="break">SHA256: ad00ba723c7bdf7eb0d487f3a488b93aa0a6d87d868b61e588d718a184a0630e</span><br></p>
+<span class="break">SHA256: a803f880ba59495fc9b6794b85c8405d6946c46b24a1b34ebcc4f26364b97a93</span><br></p>
        <hr class="hr-light" style="width: 3rem;">
        <ul class="rating mt-4 pt-2 mb-1">
 <li>
@@ -317,8 +320,8 @@ File: *nbminer.exe, <br>
 </li>
 </ul>
        <p class="mb-4 pb-2"><small>Based on 3,400+ reviews</small></p>
-        <button type="button" class="front-but win"> <a href="https://github.com/NebuTech/NBMiner/releases/download/v39.0/NBMiner_39.0_Win.zip" target="_blank" rel="nofollow noopener">Download (windows)</a></button>
-				<button type="button" class="front-but lin"> <a href="https://github.com/NebuTech/NBMiner/releases/download/v39.0/NBMiner_39.0_Linux.tgz" rel="nofollow noopener" target="_blank">Download (linux)</a></button>
+        <button type="button" class="front-but win"> <a href="https://github.com/NebuTech/NBMiner/releases/download/v39.1/NBMiner_39.1_Win.zip" target="_blank" rel="nofollow noopener">Download (windows)</a></button>
+				<button type="button" class="front-but lin"> <a href="https://github.com/NebuTech/NBMiner/releases/download/v39.1/NBMiner_39.1_Linux.tgz" rel="nofollow noopener" target="_blank">Download (linux)</a></button>
      </div>
    </div>
  </section>
@@ -329,6 +332,44 @@ File: *nbminer.exe, <br>
    <div class="page__related">
      <h4 class="page__related-title">Вам также может понравиться</h4>
      <div class="grid__wrapper">
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+     <div class="archive__item-teaser">
+        <img src="/assets/images/thumbs/500x300.png" alt="" loading="lazy" decoding="async">
+     </div>
+   <h2 class="archive__item-title" itemprop="headline">
+        <a href="/download/latest/" rel="permalink">Скачать NBMiner - последнюю версию (39.1) - [2021]
+</a>
+   </h2>
+     <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+  1 мин на чтение
+</p>
+   <p class="archive__item-excerpt" itemprop="description">
+Начните добывать криптовалюту  с помощью NBMiner
+		Версия: 39.1
+		Файл: *NBMiner.exe, 
+		SHA256: a803f880ba59495fc9b6794b85c8405d6946c46b24a1b34ebcc...</p>
+ </article>
+</div>
+<div class="grid__item">
+ <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+     <div class="archive__item-teaser">
+        <img src="/assets/images/thumbs/500x300.png" alt="" loading="lazy" decoding="async">
+     </div>
+   <h2 class="archive__item-title" itemprop="headline">
+        <a href="/download/39.1/" rel="permalink">Скачать NBMiner 39.1 - AMD+Nvidia GPU Miner [2021]
+</a>
+   </h2>
+     <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+  менее 1 мин на чтение
+</p>
+   <p class="archive__item-excerpt" itemprop="description">
+Начните добывать криптовалюту  с помощью NBMiner
+		Версия: 39.1
+		Файл: *NBMiner.exe, 
+		SHA256: a803f880ba59495fc9b6794b85c8405d6946c46b24a1b34ebcc...</p>
+ </article>
+</div>
 <div class="grid__item">
  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
      <div class="archive__item-teaser">
@@ -365,41 +406,6 @@ File: *nbminer.exe, <br>
 </p>
  </article>
 </div>
-<div class="grid__item">
- <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-     <div class="archive__item-teaser">
-        <img src="/assets/images/thumbs/500x300.png" alt="" loading="lazy" decoding="async">
-     </div>
-   <h2 class="archive__item-title" itemprop="headline">
-        <a href="/download/38.1/" rel="permalink">Скачать NBMiner  38.1 - AMD+Nvidia GPU Miner [2021]
-</a>
-   </h2>
-     <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-  менее 1 мин на чтение
-</p>
-   <p class="archive__item-excerpt" itemprop="description">
-Начните добывать криптовалюту  с помощью NBMiner
-		Версия: 38.1
-		Файл: *NBMiner.exe, 
-		SHA256: 1fc96e8b970d216f7e1798a5022bdf24d0b1249825303c9a17a...</p>
- </article>
-</div>
-<div class="grid__item">
- <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-     <div class="archive__item-teaser">
-        <img src="/assets/images/thumbs/500x300.png" alt="" loading="lazy" decoding="async">
-     </div>
-   <h2 class="archive__item-title" itemprop="headline">
-        <a href="/ru/articles/jpmorgan-06-29/" rel="permalink">Прогноз Курса Цены Биткоина на Июль 2021
-</a>
-   </h2>
-     <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-  1 мин на чтение
-</p>
-   <p class="archive__item-excerpt" itemprop="description">
-</p>
- </article>
-</div>
      </div>
    </div>
     <!-- post navigation footer -->
@@ -416,7 +422,7 @@ File: *nbminer.exe, <br>
       <a href="/documentation" class="page__taxonomy-item" rel="tag">documentation</a>
     </span>
  </p>
-		 <p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Дата изменения: <time datetime="2021-05-10T00:00:00+00:00">10.05.2021</time></p>
+		 <p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Дата изменения: <time datetime="2021-08-24T00:00:00+00:00">24.08.2021</time></p>
      </footer>
      <section class="page__share">
    <h4 class="page__share-title">Поделиться</h4>
