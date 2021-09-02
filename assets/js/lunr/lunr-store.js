@@ -52,4 +52,10 @@ var store = [{
         "tags": ["NBMiner"],
         "url": "https://nbminer.info/download/latest/",
         "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
+      },{
+        "title": "Download NBMiner 39.2 - AMD+Nvidia GPU Miner [2021]",
+        "excerpt":" Get started with NBMiner  \t\t \t\t\t \t\tVersion: 39.2  \t\tFile: *NBMiner.exe,    \t\tSHA256: ba8b1f273ec59807264964926ffedd21c0cce468ff82ca5da153eb201d547d52  \t\t(Download for Linux)\t \t\t \t\t \t\t \t\t \t\tDownload Now (Windows x64) \t\t \t\t(mirror) \t\t \t     The new NBMiner stable version is ready.   You can download NBMiner 39.2 from here:   Download Now   Download (mirror)   Inside the archive you will find a file README.txt with installation instructions.   Make sure to replace the pool and wallet address by what you’re using in all files.   Changelog      feature: ethash added LHR lock detection and recovery in LHR mode.   fix: ergo more robust protocol handle.        ","categories": ["download"],
+        "tags": ["NBMiner"],
+        "url": "https://nbminer.info/download/39.2/",
+        "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
       },]
