@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://teamredminer.info/sitemap_index.xml
+Sitemap: https://nbminer.info/sitemap_index.xml
