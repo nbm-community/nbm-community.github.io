@@ -21,7 +21,7 @@
    <meta name="twitter:card" content="summary">
      <meta name="twitter:image" content="https://nbminer.info/assets/images/site-logo.png">
  <meta property="article:published_time" content="2021-06-02T00:00:00+00:00">
- <meta property="article:modified_time" content="2021-11-05T00:00:00+00:00">
+ <meta property="article:modified_time" content="2021-12-22T00:00:00+00:00">
 <link rel="canonical" href="https://nbminer.info/documentation/arguments/">
 <script type="application/ld+json">
   {
@@ -159,7 +159,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
    <meta itemprop="headline" content="NBMiner: Command Line Arguments and Options">
    <meta itemprop="description" content="Command line arguments are nothing but simply arguments that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
    <meta itemprop="datePublished" content="June 02, 2021">
-   <meta itemprop="dateModified" content="November 05, 2021"> 
+   <meta itemprop="dateModified" content="December 22, 2021"> 
    <div class="page__inner-wrap">
       <header>
 		 <h1 id="page-title" class="page__title" itemprop="headline">NBMiner  - command line arguments and options
@@ -178,7 +178,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <a href="#download">Download</a>
  </li>
 <li>
-<a href="#cmd-options">CMD options：</a>
+<a href="#cmd-options">CMD options</a>
  </li>
 <li>
 <a href="#api-reference">API Reference</a>
@@ -212,7 +212,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 </script>
 <h2 id="download">Download</h2>
 <p><a href="https://github.com/NebuTech/BTMiner_NebuTech/releases" rel="nofollow noopener" target="_blank">Download here</a></p>
-<h2 id="cmd-options">CMD options：</h2>
+<h2 id="cmd-options">CMD options</h2>
 <div class="language-batch highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">nbminer</span> <span class="na">-a </span><span class="kd">algo</span> <span class="na">-o </span><span class="kd">protocol</span><span class="na">+socket</span>_type://pool_host:pool_port <span class="na">-u </span><span class="kd">wallet_address</span>.worker:passwd
 </code></pre></div></div>
 <ul>
@@ -231,37 +231,52 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <li>
 <code class="language-plaintext highlighter-rouge">--api  \&lt;host:port&gt;</code>    The endpoint for serving REST API.
  </li>
-<li>-o, –url &lt;url&gt;    Mining pool url.
+<li>
+<code class="language-plaintext highlighter-rouge">-o</code>, <code class="language-plaintext highlighter-rouge">--url \&lt;url&gt;</code>    Mining pool url.
  </li>
-<li>-u, –user &lt;user&gt;    User used in Mining pool, wallet address or username.
+<li>
+<code class="language-plaintext highlighter-rouge">-u</code>, <code class="language-plaintext highlighter-rouge">--user \&lt;user&gt;</code>    User used in Mining pool, wallet address or username.
  </li>
-<li>-o1, –url1 &lt;url&gt; url for backup mining pool 1.
+<li>
+<code class="language-plaintext highlighter-rouge">-o1</code>, <code class="language-plaintext highlighter-rouge">--url1 \&lt;url&gt;</code> url for backup mining pool 1.
  </li>
-<li>-u1, –user1 &lt;user&gt; username for backup mining pool 1.
+<li>
+<code class="language-plaintext highlighter-rouge">-u1</code>, <code class="language-plaintext highlighter-rouge">--user1 \&lt;user&gt;</code> username for backup mining pool 1.
  </li>
-<li>-o2, –url2 &lt;url&gt; url for backup mining pool 2.
+<li>
+<code class="language-plaintext highlighter-rouge">-o2</code>, <code class="language-plaintext highlighter-rouge">--url2 \&lt;url&gt;</code> url for backup mining pool 2.
  </li>
-<li>-u2, –user2 &lt;user&gt; username for backup mining pool 2.
+<li>
+<code class="language-plaintext highlighter-rouge">-u2</code>, <code class="language-plaintext highlighter-rouge">--user2 \&lt;user&gt;</code> username for backup mining pool 2.
  </li>
-<li>-p,  –password &lt;password&gt;  password for mining pool
+<li>
+<code class="language-plaintext highlighter-rouge">-p</code>,  <code class="language-plaintext highlighter-rouge">--password \&lt;password&gt;</code>  password for mining pool
  </li>
-<li>-p1,  –password1 &lt;password&gt;  password for backup mining pool1
+<li>
+<code class="language-plaintext highlighter-rouge">-p1</code>,  <code class="language-plaintext highlighter-rouge">--password1 \&lt;password&gt;</code>  password for backup mining pool1
  </li>
-<li>-p2,  –password2 &lt;password&gt;  password for backup mining pool2
+<li>
+<code class="language-plaintext highlighter-rouge">-p2</code>,  <code class="language-plaintext highlighter-rouge">--password2 \&lt;password&gt;</code>  password for backup mining pool2
  </li>
-<li>-di, –secondary-intensity &lt;intensity&gt;    The relative intensity when dual mining.
+<li>
+<code class="language-plaintext highlighter-rouge">-di</code>, <code class="language-plaintext highlighter-rouge">--secondary-intensity \&lt;intensity&gt;</code>    The relative intensity when dual mining.
  </li>
-<li>-do, –secondary-url &lt;url&gt;    ETH mining pool when dual mining.
+<li>
+<code class="language-plaintext highlighter-rouge">-do</code>, <code class="language-plaintext highlighter-rouge">--secondary-url \&lt;url&gt;</code>    ETH mining pool when dual mining.
  </li>
-<li>-du, –secondary-user &lt;user&gt;    ETH username when dual mining.
+<li>
+<code class="language-plaintext highlighter-rouge">-du</code>, <code class="language-plaintext highlighter-rouge">--secondary-user \&lt;user&gt;</code>    ETH username when dual mining.
  </li>
-<li>-do1, –secondary-url1 &lt;url&gt;    Backup 1 ETH mining pool when dual mining.
+<li>
+<code class="language-plaintext highlighter-rouge">-do1</code>, <code class="language-plaintext highlighter-rouge">--secondary-url1 \&lt;url&gt;</code>    Backup 1 ETH mining pool when dual mining.
  </li>
-<li>-du1, –secondary-user1 &lt;user&gt;    Backup 1 ETH username when dual mining.
+<li>
+<code class="language-plaintext highlighter-rouge">-du1</code>, <code class="language-plaintext highlighter-rouge">--secondary-user1 \&lt;user&gt;</code>    Backup 1 ETH username when dual mining.
  </li>
-<li>-do2, –secondary-url2 &lt;url&gt;    Backup 2 ETH mining pool when dual mining.
+<li>
+<code class="language-plaintext highlighter-rouge">-do2</code>, `–secondary-url2 &lt;url&gt;    Backup 2 ETH mining pool when dual mining.
  </li>
-<li>-du2, –secondary-user2 &lt;user&gt;    Backup 2 ETH username when dual mining.
+<li>-du2, <code class="language-plaintext highlighter-rouge">--secondary-user2 \&lt;user&gt;</code>    Backup 2 ETH username when dual mining.
  </li>
 <li>-d, –devices &lt;devices&gt;    Specify GPU list to use. Format: “-d 0,1,2,3” to use first 4 GPU.
  </li>
@@ -410,7 +425,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
       <a href="/documentation" class="page__taxonomy-item" rel="tag">documentation</a>
     </span>
  </p>
-		 <p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated: <time datetime="2021-11-05T00:00:00+00:00">05.11.2021</time></p>
+		 <p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated: <time datetime="2021-12-22T00:00:00+00:00">22.12.2021</time></p>
      </footer>
      <section class="page__share">
    <h4 class="page__share-title">Share on</h4>
