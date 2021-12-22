@@ -5,18 +5,18 @@
 <meta charset="utf-8">
 <!-- begin _includes/seo.html -->
 <title>NBMiner: Command Line Arguments and Options</title>
-<meta name="description" content="Command line arguments are nothing but simply arguments that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
+<meta name="description" content="Command line arguments are parameters that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
  <meta name="author" content="NBMiner">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="NBMiner">
 <meta property="og:title" content="NBMiner: Command Line Arguments and Options">
 <meta property="og:url" content="https://nbminer.info/documentation/arguments/">
- <meta property="og:description" content="Command line arguments are nothing but simply arguments that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
+ <meta property="og:description" content="Command line arguments are parameters that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
  <meta property="og:image" content="https://nbminer.info/assets/images/site-logo.png">
  <meta name="twitter:site" content="@NBMiner">
  <meta name="twitter:title" content="NBMiner: Command Line Arguments and Options">
- <meta name="twitter:description" content="Command line arguments are nothing but simply arguments that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
+ <meta name="twitter:description" content="Command line arguments are parameters that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
  <meta name="twitter:url" content="https://nbminer.info/documentation/arguments/">
    <meta name="twitter:card" content="summary">
      <meta name="twitter:image" content="https://nbminer.info/assets/images/site-logo.png">
@@ -35,7 +35,7 @@
  <meta name="google-site-verification" content="9_ctVU7HO3k1LsHpsirBgY_fjGiUFRDpJoahce3O7y8">
  <meta name="yandex-verification" content="cf68ffe195af2491">
 <!-- end _includes/seo.html -->
-<meta name="description" content="Command line arguments are nothing but simply arguments that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
+<meta name="description" content="Command line arguments are parameters that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
  <meta name="author" content="NBMiner">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="NBMiner Feed">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -157,15 +157,15 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
  </div>
  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
    <meta itemprop="headline" content="NBMiner: Command Line Arguments and Options">
-   <meta itemprop="description" content="Command line arguments are nothing but simply arguments that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
+   <meta itemprop="description" content="Command line arguments are parameters that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.">
    <meta itemprop="datePublished" content="June 02, 2021">
    <meta itemprop="dateModified" content="December 22, 2021"> 
    <div class="page__inner-wrap">
       <header>
-		 <h1 id="page-title" class="page__title" itemprop="headline">NBMiner  - command line arguments and options
+		 <h1 id="page-title" class="page__title" itemprop="headline">NBMiner - command line arguments and options
 </h1>
            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-  4 minute read
+  5 minute read
 </p>
        </header>
      <section class="page__content" itemprop="text">
@@ -178,7 +178,51 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <a href="#download">Download</a>
  </li>
 <li>
-<a href="#cmd-options">CMD options</a>
+<a href="#lhr-unlock-options">LHR unlock options</a>
+ </li>
+<li>
+<a href="#fee">Fee</a>
+ </li>
+<li>
+<a href="#overclock-settings">Overclock settings</a>
+   <ul>
+     <li>
+<a href="#power-limit">Power Limit</a>
+   </li>
+</ul>
+ </li>
+<li>
+<a href="#absolute-core-clock-and-core-clock-lock">Absolute core clock and core clock lock</a>
+ </li>
+<li>
+<a href="#memory-tweak">Memory tweak</a>
+ </li>
+<li>
+<a href="#fan">Fan</a>
+ </li>
+<li>
+<a href="#pool-options">Pool options</a>
+ </li>
+<li>
+<a href="#temperature-limit">Temperature limit</a>
+ </li>
+<li>
+<a href="#gpu-settings">GPU settings</a>
+ </li>
+<li>
+<a href="#intensity">Intensity</a>
+ </li>
+<li>
+<a href="#config">Config</a>
+ </li>
+<li>
+<a href="#log-file-options">Log file options</a>
+ </li>
+<li>
+<a href="#watchdog">Watchdog</a>
+ </li>
+<li>
+<a href="#others">Others</a>
  </li>
 <li>
 <a href="#api-reference">API Reference</a>
@@ -197,7 +241,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 </ul>
            </nav>
          </aside>
-       <p><em>Command line arguments are nothing but simply arguments that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.</em>
+       <p><em>Command line arguments are parameters that are specified after the name of the program in the system’s command line, and these argument values are passed on to your program during NBMiner execution.</em>
 <img srcset="/assets/images/documentation/mobile/nbminer.webp 323w,              /assets/images/documentation/webp/nbminer.webp 517w,              /assets/images/documentation/large/nbminer.webp 1920w" sizes="(max-width: 720px) 50px, 			(max-width: 721px) 1920px, 			(max-width: 1920px) 400px,             517px" src="/assets/images/documentation/jpeg/nbminer.png" alt="nbminer" loading="lazy" decoding="async"></p>
 <!-- Coinzilla Banner 300x250 -->
 <script async="" src="https://coinzillatag.com/lib/display.js"></script>
@@ -211,204 +255,334 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
     coinzilla_display.push(c_display_preferences);
 </script>
 <h2 id="download">Download</h2>
-<p><a href="https://github.com/NebuTech/BTMiner_NebuTech/releases" rel="nofollow noopener" target="_blank">Download here</a></p>
-<h2 id="cmd-options">CMD options</h2>
+<p><a href="https://github.com/NebuTech/NBMiner/releases/download/v40.1/NBMiner_40.1_Win.zip" class="btn btn--success btn--x-large" rel="nofollow noopener" target="_blank">Download here</a></p>
+<p>Usage:</p>
 <div class="language-batch highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">nbminer</span> <span class="na">-a </span><span class="kd">algo</span> <span class="na">-o </span><span class="kd">protocol</span><span class="na">+socket</span>_type://pool_host:pool_port <span class="na">-u </span><span class="kd">wallet_address</span>.worker:passwd
 </code></pre></div></div>
+<h2 id="lhr-unlock-options">LHR unlock options</h2>
 <ul>
  <li>
-<code class="language-plaintext highlighter-rouge">-h</code>, <code class="language-plaintext highlighter-rouge">--help</code>    Displays this help.
+<code class="language-plaintext highlighter-rouge">--lhr &lt;modes&gt;</code> - partial unlock hashrate for Nvidia LHR GPUs.
+</li>
+</ul>
+<p>Available Values: [<code class="language-plaintext highlighter-rouge">-1</code>, <code class="language-plaintext highlighter-rouge">100</code>]. <code class="language-plaintext highlighter-rouge">0: auto</code>, <code class="language-plaintext highlighter-rouge">-1: off</code>.</p>
+<p>Others: set to 60 means tryiung to reach 60% of nonlocked max hashrate.</p>
+<p>Example LHR mode for ETH:</p>
+<p class="notice--info"><code>nbminer -a ethash -o eu1.ethermine.org:4444 -u 0x3aa3e06C47caDEf96202D378aB7C407CF46A36A4.rig <span class="red">--lhr 60</span><br>
+pause</code></p>
+<p> </p>
+<ul>
+ <li>
+<code class="language-plaintext highlighter-rouge">--lhr-mode</code>, <code class="language-plaintext highlighter-rouge">--lm &lt;modes&gt;</code>  -  LHR unlock mode for Nvidia LHR GPUs.
+</li>
+</ul>
+<p>Available Values: 1 or 2.<br>
+1: higher max hashrate, higher power consumption;<br>
+2: lower max hashrate, lower average power consumption.</p>
+<p>Example:</p>
+<p class="notice--info"><code>nbminer -a ethash -o eu1.ethermine.org:4444 -u 0x3aa3e06C47caDEf96202D378aB7C407CF46A36A4.rig <span class="red">--lhr-mode 1</span><br>
+pause</code></p>
+<p> </p>
+<ul>
+ <li>
+   <p><code class="language-plaintext highlighter-rouge">--lhr-reduce-value</code>, <code class="language-plaintext highlighter-rouge">--lrv &lt;value&gt;</code> - The amount of <code class="language-plaintext highlighter-rouge">-lhr</code> valud reduced each time when GPU hits LHR lock.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-v</code>, <code class="language-plaintext highlighter-rouge">--version</code>    Displays version information.
+   <p><code class="language-plaintext highlighter-rouge">--lhr-reduce-time</code>, <code class="language-plaintext highlighter-rouge">--lrt &lt;time&gt;</code>  -  The <code class="language-plaintext highlighter-rouge">-lhr</code> value will reduce by <code class="language-plaintext highlighter-rouge">-lhr-reduce-value</code> if the time since last lock.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-c</code>, <code class="language-plaintext highlighter-rouge">--config \&lt;config file path&gt;</code>    Use json format config file rather than cmd line options.
+   <p><code class="language-plaintext highlighter-rouge">--lhr-reduce-limit</code>, <code class="language-plaintext highlighter-rouge">--lrl &lt;limit&gt;</code> - Limit the times of <code class="language-plaintext highlighter-rouge">-lhr</code> been reduced.</p>
+</li>
+</ul>
+<h2 id="fee">Fee</h2>
+<ul>
+ <li>
+<code class="language-plaintext highlighter-rouge">--fee &lt;fee&gt;</code>    Change devfee in percentage, [<code class="language-plaintext highlighter-rouge">0-5</code>]. Set to <code class="language-plaintext highlighter-rouge">0</code> to turn off devfee with lower hashrate. Otherwise, devfee = max(set_value, default_value).
+</li>
+</ul>
+<h2 id="overclock-settings">Overclock settings</h2>
+<h3 id="power-limit">Power Limit</h3>
+<ul>
+ <li>
+<code class="language-plaintext highlighter-rouge">--power-limit</code>, <code class="language-plaintext highlighter-rouge">--pl &lt;limit&gt;</code> - Set power limit of GPU.
+</li>
+</ul>
+<p>Set PL in watts: <code class="language-plaintext highlighter-rouge">--pl 200</code>.</p>
+<p class="notice--info"><code>nbminer -a ethash -o eu1.ethermine.org:4444 -u 0x3aa3e06C47caDEf96202D378aB7C407CF46A36A4.rig <span class="red">--pl 200</span><br>
+pause</code></p>
+<p> </p>
+<p>In the characteristics of the video card, you can see its declared power consumption. GPU power consumption is indicated in Watts. The higher the TDP, the more power is consumed by the graphics adapter in full load.</p>
+<p class="notice--success">Read the <a href="https://bytwork.com/en/soft/msi-afterburner" target="_blank">guide to setting up MSI Afterburner - power limit, monitoring, core voltage</a> on Windows.</p>
+<p>Set PL in percetage of default PowerLimit: <code class="language-plaintext highlighter-rouge">--pl 75%</code></p>
+<p class="notice--info"><code>nbminer -a ethash -o eu1.ethermine.org:4444 -u 0x3aa3e06C47caDEf96202D378aB7C407CF46A36A4.rig <span class="red">--pl 75%</span><br>
+pause</code></p>
+<p> </p>
+<h2 id="absolute-core-clock-and-core-clock-lock">Absolute core clock and core clock lock</h2>
+<ul>
+ <li>
+<code class="language-plaintext highlighter-rouge">--cclock &lt;clocks&gt;</code> - Set core clock in MHz.
+   <ul>
+     <li>Set clock offsets: <code class="language-plaintext highlighter-rouge">--cclock 100</code>, <code class="language-plaintext highlighter-rouge">--cclock -500</code> (Windows only)
+     </li>
+<li>Set locked clock: <code class="language-plaintext highlighter-rouge">--cclock @1500</code>.
+   </li>
+</ul>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-a</code>, <code class="language-plaintext highlighter-rouge">--algo \&lt;algo&gt;</code>    Select mining algorithm
+   <p><code class="language-plaintext highlighter-rouge">--mclock &lt;clocks&gt;</code> - Set memory clock offsets in MHz. (Windows only)</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">--api  \&lt;host:port&gt;</code>    The endpoint for serving REST API.
+<code class="language-plaintext highlighter-rouge">--lock-cv &lt;cv&gt;</code> - Set locked core voltages in mV. (Windows only)
+</li>
+</ul>
+<p>Ravos:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvidia-smi -lgc 1050 - Change number to supported core lock range
+</code></pre></div></div>
+<h2 id="memory-tweak">Memory tweak</h2>
+<ul>
+ <li>
+<code class="language-plaintext highlighter-rouge">--mt</code>, <code class="language-plaintext highlighter-rouge">--memory-tweak &lt;mode&gt;</code>  -  Memory timings optimize for Nvidia GDDR5 &amp; GDDR5X gpus.
+</li>
+</ul>
+<p>Available range [1-6]. Higher value equals higher hashrate.</p>
+<p>Individual value can be set via comma seperated list. Power limit may need to be tuned up to get more hashrate.</p>
+<p class="notice--danger">Higher reject share ratio can happen if mining rig hits high temperature, set lower value of <code class="language-plaintext highlighter-rouge">-mt</code> can reduce reject ratio.</p>
+<p>Under windows, a custom driver need to be installed when using <code class="language-plaintext highlighter-rouge">-mt</code>, can installed manually by option  <code class="language-plaintext highlighter-rouge">--driver</code>, or run nbminer.exe with admin privilege to perform auto-install.</p>
+<p>Under linux, admin priviledge is needed to run, <code class="language-plaintext highlighter-rouge">sudo ./nbminer -mt x</code>.</p>
+<p><a href="https://miningsoft.org/en/tools/ohgodanethlargementpill/" target="_blank">OhGodAnETHlargementPill</a> is not needed anymore if <code class="language-plaintext highlighter-rouge">-mt</code> is enabled when mining on 1080 &amp; 1080ti GPUs.</p>
+<ul>
+ <li>
+<code class="language-plaintext highlighter-rouge">--driver &lt;action&gt;</code> -   Windows only option, install / uninstall driver for <code class="language-plaintext highlighter-rouge">memory tweak</code>. Run with admin priviledge.
+</li>
+</ul>
+<p><a href="/assets/images/documentation/run_admin.png" class="image-popup"> <img src="/assets/images/documentation/run_admin.png" alt="run as admin" loading="lazy" decoding="async"> </a></p>
+<p>install: <code class="language-plaintext highlighter-rouge">nbminer.exe --driver install</code>,</p>
+<p>uninstall: <code class="language-plaintext highlighter-rouge">nbminer.exe --driver uninstall</code>.</p>
+<h2 id="fan">Fan</h2>
+<ul>
+ <li>
+<code class="language-plaintext highlighter-rouge">--fan &lt;speed&gt;</code> - Set GPU fan speed in percentage. (Windows only)
+</li>
+</ul>
+<h2 id="pool-options">Pool options</h2>
+<ul>
+ <li>
+   <p><code class="language-plaintext highlighter-rouge">-a</code>, <code class="language-plaintext highlighter-rouge">--algo &lt;algo&gt; </code> -  Select mining algorithm.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-o</code>, <code class="language-plaintext highlighter-rouge">--url \&lt;url&gt;</code>    Mining pool url.
+   <p><code class="language-plaintext highlighter-rouge">-o</code>, <code class="language-plaintext highlighter-rouge">--url &lt;url&gt;</code>  -  Mining pool url.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-u</code>, <code class="language-plaintext highlighter-rouge">--user \&lt;user&gt;</code>    User used in Mining pool, wallet address or username.
+   <p><code class="language-plaintext highlighter-rouge">-p</code>,  <code class="language-plaintext highlighter-rouge">--password &lt;password&gt;</code> - password for mining pool.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-o1</code>, <code class="language-plaintext highlighter-rouge">--url1 \&lt;url&gt;</code> url for backup mining pool 1.
+   <p><code class="language-plaintext highlighter-rouge">-p1</code>,  <code class="language-plaintext highlighter-rouge">--password1 &lt;password&gt;</code> - password for backup mining pool1.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-u1</code>, <code class="language-plaintext highlighter-rouge">--user1 \&lt;user&gt;</code> username for backup mining pool 1.
+   <p><code class="language-plaintext highlighter-rouge">-p2</code>,  <code class="language-plaintext highlighter-rouge">--password2 &lt;password&gt;</code> - password for backup mining pool2.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-o2</code>, <code class="language-plaintext highlighter-rouge">--url2 \&lt;url&gt;</code> url for backup mining pool 2.
+   <p><code class="language-plaintext highlighter-rouge">-u</code>, <code class="language-plaintext highlighter-rouge">--user &lt;user&gt;</code> -   User used in Mining pool, wallet address or username.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-u2</code>, <code class="language-plaintext highlighter-rouge">--user2 \&lt;user&gt;</code> username for backup mining pool 2.
+   <p><code class="language-plaintext highlighter-rouge">-o1</code>, <code class="language-plaintext highlighter-rouge">--url1 &lt;url&gt;</code> - url for backup mining pool 1.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-p</code>,  <code class="language-plaintext highlighter-rouge">--password \&lt;password&gt;</code>  password for mining pool
+   <p><code class="language-plaintext highlighter-rouge">-u1</code>, <code class="language-plaintext highlighter-rouge">--user1 &lt;user&gt;</code> - username for backup mining pool 1.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-p1</code>,  <code class="language-plaintext highlighter-rouge">--password1 \&lt;password&gt;</code>  password for backup mining pool1
+   <p><code class="language-plaintext highlighter-rouge">-o2</code>, <code class="language-plaintext highlighter-rouge">--url2 &lt;url&gt;</code> -  url for backup mining pool 2.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-p2</code>,  <code class="language-plaintext highlighter-rouge">--password2 \&lt;password&gt;</code>  password for backup mining pool2
+   <p><code class="language-plaintext highlighter-rouge">-u2</code>, <code class="language-plaintext highlighter-rouge">--user2 &lt;user&gt;</code> - username for backup mining pool 2.</p>
+</li>
+</ul>
+<h2 id="temperature-limit">Temperature limit</h2>
+<ul>
+ <li>
+   <p><code class="language-plaintext highlighter-rouge">--temperature-limit</code>, <code class="language-plaintext highlighter-rouge">--tl &lt;temp-limit&gt;</code>  -  Set temperature limit of GPU, if exceeds, stop GPU.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-di</code>, <code class="language-plaintext highlighter-rouge">--secondary-intensity \&lt;intensity&gt;</code>    The relative intensity when dual mining.
+   <p><code class="language-plaintext highlighter-rouge">--temperature-start</code>, <code class="language-plaintext highlighter-rouge">--ts &lt;temp-start&gt;</code>  -  Set cool-down temperature target if GPU is stopped by <code class="language-plaintext highlighter-rouge">temperature-limit</code>, default to <temp-limit> - 5.</temp-limit></p>
+</li>
+</ul>
+<h2 id="gpu-settings">GPU settings</h2>
+<ul>
+ <li>
+   <p><code class="language-plaintext highlighter-rouge">-d</code>, <code class="language-plaintext highlighter-rouge">--devices &lt;devices&gt;</code>  -  Specify GPU list to use. Format: <code class="language-plaintext highlighter-rouge">-d 0,1,2,3</code> to use first 4 GPU.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-do</code>, <code class="language-plaintext highlighter-rouge">--secondary-url \&lt;url&gt;</code>    ETH mining pool when dual mining.
+   <p><code class="language-plaintext highlighter-rouge">--platform &lt;platform&gt;</code>  -  Choose platform:</p>
+   <ul>
+     <li>0: NVIDIA+AMD (default),
+     </li>
+<li>1: NVIDIA only,
+     </li>
+<li>2: AMD only
+   </li>
+</ul>
+</li>
+</ul>
+<h2 id="intensity">Intensity</h2>
+<ul>
+ <li>
+<code class="language-plaintext highlighter-rouge">-i</code>, <code class="language-plaintext highlighter-rouge">--intensity &lt;intensities&gt;</code>   - Comma-separated list of intensities (1 -100).
+</li>
+</ul>
+<h2 id="config">Config</h2>
+<ul>
+ <li>
+   <p><code class="language-plaintext highlighter-rouge">-c</code>, <code class="language-plaintext highlighter-rouge">--config &lt;config file path&gt;</code> - Use json format config file rather than cmd line options.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-du</code>, <code class="language-plaintext highlighter-rouge">--secondary-user \&lt;user&gt;</code>    ETH username when dual mining.
+   <p><code class="language-plaintext highlighter-rouge">--generate-config &lt;filename&gt;</code>  -  Generate a sample config json file.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-do1</code>, <code class="language-plaintext highlighter-rouge">--secondary-url1 \&lt;url&gt;</code>    Backup 1 ETH mining pool when dual mining.
+   <p><code class="language-plaintext highlighter-rouge">-h</code>, <code class="language-plaintext highlighter-rouge">--help</code>  -  Displays  help.</p>
+</li>
+</ul>
+<h2 id="log-file-options">Log file options</h2>
+<ul>
+ <li>
+   <p><code class="language-plaintext highlighter-rouge">--log</code> -   Generate log file named <code class="language-plaintext highlighter-rouge">logs/log_&lt;timestamp&gt;.txt</code>.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-du1</code>, <code class="language-plaintext highlighter-rouge">--secondary-user1 \&lt;user&gt;</code>    Backup 1 ETH username when dual mining.
+   <p><code class="language-plaintext highlighter-rouge">--log-file &lt;filename&gt;</code>  -  Generate custom log file. Note: This option will override ``–log`.</p>
  </li>
 <li>
-<code class="language-plaintext highlighter-rouge">-do2</code>, `–secondary-url2 &lt;url&gt;    Backup 2 ETH mining pool when dual mining.
- </li>
-<li>-du2, <code class="language-plaintext highlighter-rouge">--secondary-user2 \&lt;user&gt;</code>    Backup 2 ETH username when dual mining.
- </li>
-<li>-d, –devices &lt;devices&gt;    Specify GPU list to use. Format: “-d 0,1,2,3” to use first 4 GPU.
- </li>
-<li>-i, –intensity &lt;intensities&gt;    Comma-separated list of intensities (1 -100).
- </li>
-<li>–strict-ssl    Check validity of certificate when use SSL connection.
- </li>
-<li>–proxy    Socks5 proxy used to eastablish connection with pool, E.g. 127.0.0.1:1080
- </li>
-<li>–cuckoo-intensity &lt;intensity&gt;    Set intensity of cuckoo, cuckaroo, cuckatoo, [1, 12]. Smaller value means higher CPU usage to gain more hashrate. Set to 0 means autumatically adapt. Default: 0.
- </li>
-<li>–cuckatoo-power-optimize    Set this option to reduce the range of power consumed by rig when minining with algo cuckatoo. This feature can reduce the chance of power supply shutdown caused by overpowered. Warning: Setting this option may cause drop on minining performance.
- </li>
-<li>–temperature-limit, –tl &lt;temp-limit&gt;    Set temperature limit of GPU, if exceeds, stop GPU.
- </li>
-<li>–temperature-start, –ts &lt;temp-start&gt;    Set cool-down temperature target if GPU is stopped by <code class="language-plaintext highlighter-rouge">temperature-limit</code>, default to &lt;temp-limit&gt; - 5.
- </li>
-<li>–log    Generate log file named <code class="language-plaintext highlighter-rouge">logs/log_&lt;timestamp&gt;.txt</code>.
- </li>
-<li>–log-file &lt;filename&gt;    Generate custom log file. Note: This option will override <code class="language-plaintext highlighter-rouge">--log</code>.
- </li>
-<li>–no-nvml    Do not query cuda device health status.
- </li>
-<li>–fidelity-timeframe &lt;timeframe&gt;    Set timeframe for the calculation of fidelity, unit in hour. Default: 24.
- </li>
-<li>–long-format    Use ‘yyyy-MM-dd HH:mm:ss,zzz’ for log time format.
- </li>
-<li>–verbose    Print communication data between miner and pool in log file.
- </li>
-<li>–device-info    Print device cuda information.
- </li>
-<li>–fee &lt;fee&gt;    Change devfee in percentage, [0-5]. Set to ‘0’ to turn off devfee with lower hashrate. Otherwise, devfee = max(set_value, def_value).
- </li>
-<li>–generate-config &lt;filename&gt;    Generate a sample config json file.
- </li>
-<li>–no-watchdog    Disable watchdog process.
- </li>
-<li>–platform &lt;platform&gt;    Choose platform，0: NVIDIA+AMD (default), 1: NVIDIA only, 2: AMD only
- </li>
-<li>–share-check &lt;value&gt;    If &lt;value&gt; minutes without share, reboot miner, set 0 to disable. Default: 30
- </li>
-<li>–no-interrupt    set this option will disable miner interrupting current GPU jobs when a new job coming from pool, will cause less power supply issue, but might lead to a bit higher stale ratio and reject shares.
- </li>
-<li>–enable-igpu    AMD igpu is disabled by default, set this option to enable.
+   <p><code class="language-plaintext highlighter-rouge">--log-no-job</code>  -  Set this option to disable ‘New job’ info in console and log file.</p>
  </li>
 <li>
-<strong>–mt, –memory-tweak &lt;mode&gt;    Memory timings optimize for Nvidia GDDR5 &amp; GDDR5X gpus. range [1-6]. Higher value equals higher hashrate. Individual value can be set via comma seperated list. Power limit may need to be tuned up to get more hashrate. Higher reject share ratio can happen if mining rig hits high temperature, set lower value of <code class="language-plaintext highlighter-rouge">-mt</code> can reduce reject ratio. Under windows, a custom driver need to be installed when using <code class="language-plaintext highlighter-rouge">-mt</code>, can installed manually by option  <code class="language-plaintext highlighter-rouge">--driver</code>, or run nbminer.exe with admin privilege to perform auto-install. Under linux, admin priviledge is needed to run, <code class="language-plaintext highlighter-rouge">sudo ./nbminer -mt x</code>. <code class="language-plaintext highlighter-rouge">OhGodAnETHlargementPill</code> is not needed anymore if <code class="language-plaintext highlighter-rouge">-mt</code> is enabled when mining on 1080 &amp; 1080ti GPUs.</strong>
+   <p><code class="language-plaintext highlighter-rouge">--log-cycle &lt;cycle&gt;</code> -  Set to change the cycle of Summary table show in console and log, in seconds, defaults to 30.</p>
  </li>
-<li>**–driver &lt;action&gt;    Windows only option, install / uninstall driver for <code class="language-plaintext highlighter-rouge">memory tweak</code>. Run with admin priviledge. install: <code class="language-plaintext highlighter-rouge">nbminer.exe --driver install</code>, uninstall: <code class="language-plaintext highlighter-rouge">nbminer.exe --driver uninstall</code>. **
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--no-health</code>  -  Do not query device health status. (Do not set if use LHR gpu)</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--no-color</code>  -  Do not use colorful output log in cmd line.</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--long-format</code>  -  Use ‘yyMMdd HH:mm:ss,zzz’ for log time format.</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--verbose</code>  -  Print communication data between miner and pool in log file.</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--device-info</code>  -  Print device cuda information.</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--device-info-json</code>  -  Print out detailed information for every device in json format.</p>
+</li>
+</ul>
+<h2 id="watchdog">Watchdog</h2>
+<ul>
+ <li>
+   <p><code class="language-plaintext highlighter-rouge">--no-watchdog</code>  -  Disable watchdog process.</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--share-check &lt;value&gt;</code> -   If <value> minutes without share, reboot miner, set 0 to disable. Default: 30</value></p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--no-interrupt</code>  -  set this option will disable miner interrupting current GPU jobs when a new job coming from pool, will cause less power supply issue, but might lead to a bit higher stale ratio and reject shares.</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--enable-igpu</code>  -  AMD igpu is disabled by default, set this option to enable.</p>
+</li>
+</ul>
+<h2 id="others">Others</h2>
+<ul>
+ <li>
+   <p><code class="language-plaintext highlighter-rouge">-v</code>, <code class="language-plaintext highlighter-rouge">--version</code>  - Displays version information.</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--api  &lt;host:port&gt;</code>  -  The endpoint for serving REST API.</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--strict-ssl</code>  -  Check validity of certificate when use SSL connection.</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--proxy</code>  -  Socks5 proxy used to eastablish connection with pool, E.g. 127.0.0.1:1080</p>
+ </li>
+<li>
+   <p><code class="language-plaintext highlighter-rouge">--cuckoo-intensity &lt;intensity&gt;</code>  -  Set intensity of cuckoo, cuckaroo, cuckatoo, [1, 12]. Smaller value means higher CPU usage to gain more hashrate. Set to 0 means autumatically adapt. Default: 0.</p>
 </li>
 </ul>
 <h2 id="api-reference">API Reference</h2>
 <h3 id="web-monitor">Web Monitor</h3>
-<p>Open http://api_host:port/ in your browser to use web monitor.</p>
+<p>Open <code class="language-plaintext highlighter-rouge">http://api_host:port/</code> in your browser to use web monitor.</p>
 <h3 id="request">Request</h3>
-<p>GET http://api_host:port/api/v1/status</p>
+<p><code class="language-plaintext highlighter-rouge">GET http://api_host:port/api/v1/status</code></p>
 <h3 id="response">Response</h3>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"miner"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"accepted_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"accepted_shares2"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"core_clock"</span><span class="p">:</span><span class="w"> </span><span class="mi">1620</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"core_utilization"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"fan"</span><span class="p">:</span><span class="w"> </span><span class="mi">47</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"fidelity1"</span><span class="p">:</span><span class="w"> </span><span class="mf">5.859799716605649</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"fidelity2"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"hashrate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"217.1 M"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"hashrate2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"36.19 M"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"hashrate2_raw"</span><span class="p">:</span><span class="w"> </span><span class="mf">36190716.266428046</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"hashrate_raw"</span><span class="p">:</span><span class="w"> </span><span class="mf">217144297.59856823</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"info"</span><span class="p">:</span><span class="w"> </span><span class="s2">"GeForce RTX 2070"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"mem_clock"</span><span class="p">:</span><span class="w"> </span><span class="mi">6801</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"mem_utilization"</span><span class="p">:</span><span class="w"> </span><span class="mi">86</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"pci_bus_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"power"</span><span class="p">:</span><span class="w"> </span><span class="mi">188</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"rejected_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"rejected_shares2"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"temperature"</span><span class="p">:</span><span class="w"> </span><span class="mi">72</span><span class="w">
-            </span><span class="p">},</span><span class="w">
-            </span><span class="p">{</span><span class="w">
-                </span><span class="nl">"accepted_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"accepted_shares2"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"core_clock"</span><span class="p">:</span><span class="w"> </span><span class="mi">1607</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"core_utilization"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"fan"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"fidelity1"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"fidelity2"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"hashrate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"168.5 M"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"hashrate2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"42.11 M"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"hashrate2_raw"</span><span class="p">:</span><span class="w"> </span><span class="mf">42113955.19774488</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"hashrate_raw"</span><span class="p">:</span><span class="w"> </span><span class="mf">168455820.79097953</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"info"</span><span class="p">:</span><span class="w"> </span><span class="s2">"P102-100"</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"mem_clock"</span><span class="p">:</span><span class="w"> </span><span class="mi">5508</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"mem_utilization"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"pci_bus_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"power"</span><span class="p">:</span><span class="w"> </span><span class="mi">232</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"rejected_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"rejected_shares2"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-                </span><span class="nl">"temperature"</span><span class="p">:</span><span class="w"> </span><span class="mi">57</span><span class="w">
-            </span><span class="p">}</span><span class="w">
-        </span><span class="p">],</span><span class="w">
-        </span><span class="nl">"total_hashrate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"708 M"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"total_hashrate2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"164.4 M"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"total_hashrate2_raw"</span><span class="p">:</span><span class="w"> </span><span class="mf">164395439.13815895</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"total_hashrate_raw"</span><span class="p">:</span><span class="w"> </span><span class="mf">708044466.8349969</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"total_power_consume"</span><span class="p">:</span><span class="w"> </span><span class="mi">839</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"reboot_times"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="mi">1586944619</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"stratum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"accepted_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"accepted_shares2"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"algorithm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"hns_ethash"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8.59 G"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"difficulty2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"8.59 G"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"dual_mine"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"latency"</span><span class="p">:</span><span class="w"> </span><span class="mi">221</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"latency2"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rejected_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"rejected_shares2"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"handshake.hk.nicehash.com:3384"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"url2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"daggerhashimoto.hk.nicehash.com:3353"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"use_ssl"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"use_ssl2"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"user"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3QHNv52ahdCyeYTGVYDPGjRzMpkknjjfAf.test"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"user2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3QHNv52ahdCyeYTGVYDPGjRzMpkknjjfAf.test"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30.0"</span><span class="w">
+</span><span class="nl">"miner"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="nl">"devices"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+	</span><span class="p">{</span><span class="w">
+		</span><span class="nl">"accepted_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"core_clock"</span><span class="p">:</span><span class="w"> </span><span class="mi">1530</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"core_utilization"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"fan"</span><span class="p">:</span><span class="w"> </span><span class="mi">59</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"hashrate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"61.50 M"</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"hashrate2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.000 "</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"hashrate2_raw"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"hashrate_raw"</span><span class="p">:</span><span class="w"> </span><span class="mf">61497708.17088159</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"info"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NVIDIA GeForce RTX 3070"</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"invalid_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"lhr"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"memTemperature"</span><span class="p">:</span><span class="w"> </span><span class="mi">-1</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"mem_clock"</span><span class="p">:</span><span class="w"> </span><span class="mi">8000</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"mem_utilization"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"pci_bus_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"power"</span><span class="p">:</span><span class="w"> </span><span class="mi">131</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"rejected_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"temperature"</span><span class="p">:</span><span class="w"> </span><span class="mi">57</span><span class="w">
+	</span><span class="p">},</span><span class="w">
+	</span><span class="p">{</span><span class="w">
+		</span><span class="nl">"accepted_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"core_clock"</span><span class="p">:</span><span class="w"> </span><span class="mi">1035</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"core_utilization"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"fan"</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"hashrate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"85.07 M"</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"hashrate2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.000 "</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"hashrate2_raw"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"hashrate_raw"</span><span class="p">:</span><span class="w"> </span><span class="mf">85069773.34248555</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"info"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NVIDIA GeForce RTX 3080 Ti LHR"</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"invalid_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"lhr"</span><span class="p">:</span><span class="w"> </span><span class="mi">74</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"memTemperature"</span><span class="p">:</span><span class="w"> </span><span class="mi">104</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"mem_clock"</span><span class="p">:</span><span class="w"> </span><span class="mi">10251</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"mem_utilization"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"pci_bus_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">48</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"power"</span><span class="p">:</span><span class="w"> </span><span class="mi">258</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"rejected_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+		</span><span class="nl">"temperature"</span><span class="p">:</span><span class="w"> </span><span class="mi">64</span><span class="w">
+	</span><span class="p">}</span><span class="w">
+</span><span class="p">],</span><span class="w">
+</span><span class="nl">"total_hashrate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"146.6 M"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"total_hashrate2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.000 "</span><span class="p">,</span><span class="w">
+</span><span class="nl">"total_hashrate2_raw"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+</span><span class="nl">"total_hashrate_raw"</span><span class="p">:</span><span class="w"> </span><span class="mf">146567481.51336715</span><span class="p">,</span><span class="w">
+</span><span class="nl">"total_power_consume"</span><span class="p">:</span><span class="w"> </span><span class="mi">389</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="nl">"reboot_times"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+</span><span class="nl">"start_time"</span><span class="p">:</span><span class="w"> </span><span class="mi">1637549633</span><span class="p">,</span><span class="w">
+</span><span class="nl">"stratum"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+</span><span class="nl">"accepted_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+</span><span class="nl">"algorithm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ethash"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"difficulty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4.295 G"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"dual_mine"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+</span><span class="nl">"invalid_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+</span><span class="nl">"latency"</span><span class="p">:</span><span class="w"> </span><span class="mi">217</span><span class="p">,</span><span class="w">
+</span><span class="nl">"pool_hashrate_10m"</span><span class="p">:</span><span class="w"> </span><span class="s2">"217.9 M"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"pool_hashrate_24h"</span><span class="p">:</span><span class="w"> </span><span class="s2">"217.9 M"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"pool_hashrate_4h"</span><span class="p">:</span><span class="w"> </span><span class="s2">"217.9 M"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"rejected_shares"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"asia2.ethermine.org:5555"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"use_ssl"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+</span><span class="nl">"user"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x4296116d44a4a7259B52B1A756e19083e675062A"</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40.0"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
      </section>
