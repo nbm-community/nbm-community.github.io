@@ -1,6 +1,6 @@
 var store = [{
         "title": "NBMiner Setup Guide [2022]",
-        "excerpt":"You can use this list as a reference for all Launch Parameters supported by NBMiner.          You can download NBMiner 42.1 from here:   Download Now   Download (mirror)   Linux:  Under Linux you need to replace NBMiner.exe with ./NBMiner in the command-line examples below.   ","categories": ["documentation"],
+        "excerpt":"You can use this list as a reference for all Launch Parameters supported by NBMiner.          You can download NBMiner 42.2 from here:   Download Now   Download (mirror)   Linux:  Under Linux you need to replace NBMiner.exe with ./NBMiner in the command-line examples below.   ","categories": ["documentation"],
         "tags": ["NBMiner"],
         "url": "https://nbminer.info/documentation/setup/",
         "teaser": "https://nbminer.info/assets/images/thumbs/500x300.png"
