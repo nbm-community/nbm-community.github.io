@@ -1,5 +1,5 @@
 var store = [{
-        "title": "Argumentos de la línea de comandos de NBMiner [2022]",
+        "title": "Argumentos de la línea de comandos de NBMiner [2023]",
         "excerpt":"You can use this list as a reference for all Launch Parameters supported by NBMiner.          You can download NBMiner 42.3 from here:   Download Now   Download (mirror)   Linux:  Under Linux you need to replace NBMiner.exe with ./NBMiner in the command-line examples below.   ","categories": ["documentation"],
         "tags": ["NBMiner"],
         "url": "https://nbminer.info/documentation/setup/",

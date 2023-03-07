@@ -4,30 +4,30 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <!-- begin _includes/seo.html -->
-<title>NBMiner Setup Guide [2022]</title>
+<title>NBMiner Setup Guide [2023]</title>
 <meta name="description" content="You can use this list as a reference for all Launch Parameters supported by NBMiner.         Download">
  <meta name="author" content="NBMiner">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="NBMiner">
-<meta property="og:title" content="NBMiner Setup Guide [2022]">
+<meta property="og:title" content="NBMiner Setup Guide [2023]">
 <meta property="og:url" content="https://nbminer.info/documentation/setup/">
  <meta property="og:description" content="You can use this list as a reference for all Launch Parameters supported by NBMiner.         Download">
  <meta property="og:image" content="https://nbminer.info/assets/images/site-logo.png">
  <meta name="twitter:site" content="@NBMiner">
- <meta name="twitter:title" content="NBMiner Setup Guide [2022]">
+ <meta name="twitter:title" content="NBMiner Setup Guide [2023]">
  <meta name="twitter:description" content="You can use this list as a reference for all Launch Parameters supported by NBMiner.         Download">
  <meta name="twitter:url" content="https://nbminer.info/documentation/setup/">
    <meta name="twitter:card" content="summary">
      <meta name="twitter:image" content="https://nbminer.info/assets/images/site-logo.png">
- <meta property="article:published_time" content="2021-06-02T00:00:00+00:00">
- <meta property="article:modified_time" content="2022-05-14T00:00:00+00:00">
+ <meta property="article:published_time" content="2021-06-02T00:00:00-05:00">
+ <meta property="article:modified_time" content="2023-03-07T00:00:00-05:00">
 <link rel="canonical" href="https://nbminer.info/documentation/setup/">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "NBMiner Setup Guide [2022]",
+  "headline": "NBMiner Setup Guide [2023]",
   "image": "",  
   "author": {
     "@type": "Person",
@@ -43,7 +43,7 @@
       "url": "https://nbminer.info/assets/images/logo2.png"
     }
   },
-  "dateModified": "2022-05-14T00:00:00+00:00"
+  "dateModified": "2023-03-07T00:00:00-05:00"
 }
 </script>
  <meta name="google-site-verification" content="9_ctVU7HO3k1LsHpsirBgY_fjGiUFRDpJoahce3O7y8">
@@ -170,10 +170,10 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 </nav>
  </div>
  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-   <meta itemprop="headline" content="NBMiner Setup Guide [2022]">
+   <meta itemprop="headline" content="NBMiner Setup Guide [2023]">
    <meta itemprop="description" content="You can use this list as a reference for all Launch Parameters supported by NBMiner.Download">
    <meta itemprop="datePublished" content="June 02, 2021">
-   <meta itemprop="dateModified" content="May 14, 2022"> 
+   <meta itemprop="dateModified" content="March 07, 2023"> 
    <div class="page__inner-wrap">
       <header>
 		 <h1 id="page-title" class="page__title" itemprop="headline">NBMiner Setup Guide
@@ -195,7 +195,7 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <a href="#sample-usages">Sample Usages</a>
    <ul>
      <li>
-<a href="#ethereum-eth">Ethereum (ETH)</a>
+<a href="#ethereumpow-ethw">EthereumPOW (ETHw)</a>
      </li>
 <li>
 <a href="#dual-mining-ethzil">Dual mining ETH+ZIL</a>
@@ -240,23 +240,22 @@ button:focus,a:focus{outline:thin dotted #6f777d;outline:5px auto #6f777d;outlin
 <p>NBMiner has a command line interface. For minimal configuration, enter in the .bat file:</p>
 <p class="notice--ya">nbminer -a [mining_algorithm] -o [pool_adderess] -u [wallet_address]</p>
 <p class="notice--success"><strong>Where can I get the wallet address?</strong><br>
-The easiest way to get a wallet address is to register on the <a href="https://www.huobi.com/en-us/topic/double-reward/?invite_code=an6c4223" rel="nofollow noopener" target="_blank">Huobi exchange</a> or <a href="https://accounts.binance.com/en/register?ref=FREFME6T" rel="nofollow noopener" target="_blank">Binance</a>.</p>
+The easiest way to get a wallet address is to register on the <a href="https://cutt.ly/e8Fgxgp" rel="nofollow noopener" target="_blank">Huobi exchange</a> or <a href="https://cutt.ly/z8FgvCC" rel="nofollow noopener" target="_blank">Kuna</a>.</p>
 <p>Edit the bat files like this:</p>
-<h3 id="ethereum-eth">Ethereum (ETH)</h3>
-<p>ethermine:<br>
-<code class="language-plaintext highlighter-rouge">nbminer -a ethash -o ethproxy+tcp://asia1.ethermine.org:4444 -u 0x12343bdgf.worker</code></p>
-<p>sparkpool:<br>
-<code class="language-plaintext highlighter-rouge">nbminer -a ethash -o ethproxy+tcp://cn.sparkpool.com:3333 -u 0x12343bdgf.worker</code></p>
-<p>f2pool:<br>
-<code class="language-plaintext highlighter-rouge">nbminer -a ethash -o ethproxy+tcp://eth.f2pool.com:8008 -u 0x12343bdgf.worker</code></p>
-<p>beepool:<br>
-<code class="language-plaintext highlighter-rouge">nbminer -a ethash -o ethproxy+tcp://eth-pool.beepool.org:9530 -u 0x12343bdgf.worker</code></p>
-<p>nanopool:<br>
-<code class="language-plaintext highlighter-rouge">nbminer -a ethash -o ethproxy+tcp://eth-asia1.nanopool.org:9999 -u 0x12343bdgf.worker</code></p>
-<p>herominers:<br>
-<code class="language-plaintext highlighter-rouge">nbminer -a ethash -o ethproxy+tcp://ethereum.herominers.com:10201 -u 0x12343bdgf.worker</code></p>
+<h3 id="ethereumpow-ethw">EthereumPOW (ETHw)</h3>
+<p>woolypooly:</p>
+<div class="language-batch highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">nbminer</span><span class="err">.exe</span> <span class="na">-a </span><span class="kd">ethash</span> <span class="na">-o </span><span class="kd">ethproxy</span><span class="na">+tcp</span>://pool.woolypooly.com:3096 <span class="na">-u </span><span class="mh">0x0a753EE6989480e6CE633860508269a2CCfaE34A</span>.WORKER_NAME
+</code></pre></div></div>
+<p>2mienrs:</p>
+<div class="language-batch highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">nbminer</span><span class="err">.exe</span> <span class="na">-a </span><span class="kd">ethash</span> <span class="na">-o </span><span class="kd">stratum</span><span class="na">+tcp</span>://ethw.2miners.com:2020 <span class="na">-u </span><span class="mh">0x0a753EE6989480e6CE633860508269a2CCfaE34A</span>.RIG_ID
+<span class="nb">pause</span>
+</code></pre></div></div>
+<p>ezil:</p>
+<div class="language-batch highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">nbminer</span> <span class="na">-a </span><span class="kd">ethash</span> <span class="na">-o </span><span class="kd">stratum</span><span class="na">+ssl</span>://eu.ezil.me:50113 <span class="na">-u </span><span class="mh">0x0a753EE6989480e6CE633860508269a2CCfaE34A</span>.WORKER <span class="na">-o</span><span class="m">1</span> <span class="kd">stratum</span><span class="na">+ssl</span>://us<span class="na">-west</span>.ezil.me:50113 <span class="na">-u</span><span class="m">1</span> <span class="mh">0x0a753EE6989480e6CE633860508269a2CCfaE34A</span>.WORKER <span class="na">-o</span><span class="m">2</span> <span class="kd">stratum</span><span class="na">+ssl</span>://asia.ezil.me:50113 <span class="na">-u</span><span class="m">2</span> <span class="mh">0x0a753EE6989480e6CE633860508269a2CCfaE34A</span>.WORKER <span class="na">--log 
+</span><span class="nb">pause</span>
+</code></pre></div></div>
 <p>nicehash:<br>
-<code class="language-plaintext highlighter-rouge">nbminer -a ethash -o nicehash+tcp://daggerhashimoto.eu.nicehash.com:3353 -u btc_address.worker</code></p>
+<code class="language-plaintext highlighter-rouge">nbminer -a ethash -o nicehash+tcp://daggerhashimoto.auto.nicehash.com:9200 -u 3P7qADz69quhfyK5e9kvfno6Jyjq4Rcocx.worker</code></p>
 <p class="notice--danger"><strong>Customize NBMiner for Maximum Profit! Read the <a href="https://miningsoft.org/en/miners/nbminer/" target="_blank">full guide to configuring NBMiner</a></strong></p>
 <h3 id="dual-mining-ethzil">Dual mining ETH+ZIL</h3>
 <p>ezil:</p>
@@ -331,11 +330,11 @@ The easiest way to get a wallet address is to register on the <a href="https://w
       <a href="/documentation" class="page__taxonomy-item" rel="tag">documentation</a>
     </span>
  </p>
-		 <p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated: <time datetime="2022-05-14T00:00:00+00:00">14.05.2022</time></p>
+		 <p class="page__date"><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated: <time datetime="2023-03-07T00:00:00-05:00">07.03.2023</time></p>
      </footer>
      <section class="page__share">
    <h4 class="page__share-title">Share on</h4>
-  <a href="https://twitter.com/intent/tweet?via=NBMiner&amp;text=NBMiner+Setup+Guide+%5B2022%5D%20https%3A%2F%2Fnbminer.info%2Fdocumentation%2Fsetup%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=NBMiner&amp;text=NBMiner+Setup+Guide+%5B2023%5D%20https%3A%2F%2Fnbminer.info%2Fdocumentation%2Fsetup%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnbminer.info%2Fdocumentation%2Fsetup%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
   <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fnbminer.info%2Fdocumentation%2Fsetup%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn" rel="nofollow noopener" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
@@ -541,7 +540,7 @@ Get started with NBMiner
 	</div>
 	<div class="page__footer-copyright">
 			<p><a href="#" class="back_to_top">Back to top</a></p>
-	© 2022 NBMiner. 
+	© 2023 NBMiner. 
 		<p class="diclamer"></p>
 	</div>
 </section>
